@@ -1,7 +1,5 @@
-/****************************************/
-/*	PART: work sheet PAGE STYLE
-/****************************************/
-//------ font
+//------* PART: work sheet PAGE STYLE
+//--- font
 $fontDefault: 'Malgun Gothic','Dotum', Arial, sans-serif;
 $fontNoto: 'NotoSansKR', $fontDefault;
 $fontRoboto: 'roboto','NotoSansKR', $fontDefault;
@@ -10,7 +8,7 @@ $webfont:$fontPretendard, $fontDefault;
 
 $img-url:'../img/'; // img 경로설정(예시 :  background:url($img-url + 'imgFileName.png') no-repeat 0 0;)
 
-//------ color system
+//--- color system
 $color-default:#333;
 $color-white: #fff;
 $color-black: #000;
@@ -75,7 +73,7 @@ $color-darkMode3: #323232;
 $color-darkMode4:#444;
 
 
-/* flag */
+//--- flag
 $flag-bl: $color-blue;
 $flag-gr: #4bdf7c;
 $flag-or: $color-orange;
@@ -99,7 +97,8 @@ $default-color: $color-default;
     --space-3xl: 4.0rem;
     --space-4xl: 4.8rem;
 }
-//------ name spaces
+
+//--- name spaces
 $darMode:'html[light-mode="dark"]';
 $htmlM: 'html.m';
 $width-PC: 125rem;
@@ -143,7 +142,7 @@ $hr:".hr";
 $tab:".tab";
 $swiper:".swiper";
 $isActive:"._is-active";
-//------ name spaces
+
 $pub:'.pub';
 $pg:'.pg';
 $pgHeader:'#pgHeader';
@@ -171,7 +170,7 @@ $pgHisory:'.remark';
 $pgDivice:'.frame_device';
 %transition3s {@include transition(.3s, all, ease-in-out);}
 
-// SVG ICON
+//--- SVG ICON
 @function svgIcon($iconName, $color: 666, $bgRepeat:no-repeat, $bgPos:50% 50%) {
     $iconList: (
     // Guide Search BTN
@@ -273,7 +272,7 @@ $bgIcoURL:'../../../img/';
     @content;
 }
 
-// fontawesome ICO
+//--- fontawesome ICO
 @mixin webfont ($fontName:$webfont, $fontweight:500) {
     font : {
         family: $fontName;

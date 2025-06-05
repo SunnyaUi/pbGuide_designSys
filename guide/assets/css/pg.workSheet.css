@@ -252,7 +252,6 @@ hr.divider + [class*=field], hr.divider + [class*=Wrap], hr.divider + * {
   width: 100% !important;
 }
 
-/* WEB FONT */
 @font-face {
   font-family: "iconFont";
   font-style: normal;
@@ -380,10 +379,6 @@ hr.divider + [class*=field], hr.divider + [class*=Wrap], hr.divider + * {
   font-display: swap;
   src: local("Pretendard Thin"), url("../../../assets/fonts/webfonts/Pretendard-Thin.subset.woff2") format("woff2"), url("../../../assets/fonts/webfonts/Pretendard-Thin.subset.woff") format("woff");
 }
-/****************************************/
-/*	PART: work sheet PAGE STYLE
-/****************************************/
-/* flag */
 :root {
   --space-4xs: .4rem;
   --space-3xs: .8rem;
@@ -414,9 +409,6 @@ hr.divider + [class*=field], hr.divider + [class*=Wrap], hr.divider + * {
   justify-content: space-between;
 }
 
-/*****************************************************************
-  Pub Guide
-*****************************************************************/
 .pg-tab {
   border-width: 0 0 0.1rem;
   border-style: solid;
@@ -498,9 +490,6 @@ hr.divider + [class*=field], hr.divider + [class*=Wrap], hr.divider + * {
   font-weight: 500;
 }
 
-/*****************************************************************
-  Header
-*****************************************************************/
 #pgHeader {
   display: flex;
   flex-direction: row;
@@ -933,9 +922,6 @@ html.util_show .btn_util .bar.b3 {
   stroke-dashoffset: 14;
 }
 
-/*****************************************************************
-  Nav
-*****************************************************************/
 .pg_nav {
   position: fixed;
   top: 6.1rem;
@@ -1021,9 +1007,6 @@ html.util_show .btn_util .bar.b3 {
   color: #fff;
 }
 
-/*****************************************************************
-  Content
-*****************************************************************/
 #pgWrap {
   padding-top: 15.5rem;
 }
@@ -1449,9 +1432,6 @@ html.m .pg_content {
   bottom: 1rem;
 }
 
-/*****************************************************************
-    Tab
-*****************************************************************/
 .pg_board_tab:not([data-util=component] .pg_board_tab) {
   display: none;
 }
@@ -1528,9 +1508,6 @@ html.m .pg_board_tab {
   display: none;
 }
 
-/*****************************************************************
-  Status Chart
-*****************************************************************/
 .pg_project_status pgCount, .pg_project_status .pg_project_ing {
   display: inline-flex;
   align-items: center;
@@ -1864,9 +1841,6 @@ html.m .panel_head {
   background-color: #fed03a;
 }
 
-/*****************************************************************
-  Table
-*****************************************************************/
 .pg_board {
   margin: 3rem 2rem 0;
   border-top: 0.2rem solid #e6e6e6;
@@ -2380,9 +2354,6 @@ html.m .pg_board table tbody td a.btn_hover {
   -ms-backdrop-filter: blur(1rem);
 }
 
-/*****************************************************************
-  Layout
-*****************************************************************/
 .pg_layout {
   padding-top: 3rem;
 }
@@ -2496,9 +2467,6 @@ html.m .pg_board table tbody td a.btn_hover {
   content: "footer#footer";
 }
 
-/*****************************************************************
-  Device Frame
-*****************************************************************/
 .frame_device {
   position: fixed;
   top: 7rem;
@@ -2639,9 +2607,6 @@ html.m .frame_device {
   right: 1rem;
 }
 
-/*****************************************************************
-  Component
-*****************************************************************/
 .pg-contentWrap {
   padding: 2rem;
 }
@@ -2795,9 +2760,6 @@ html.m .frame_device {
   height: 1px;
 }
 
-/*****************************************************************
-  Dark Mode
-*****************************************************************/
 html[light-mode=dark] {
   background-color: #323232;
   color: #fff;

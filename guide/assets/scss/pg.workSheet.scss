@@ -7,10 +7,7 @@
 @import 'font';
 @import 'pg.variables';
 
-
-/*****************************************************************
-  Pub Guide
-*****************************************************************/
+//---* Pub Guide
 #{$pg} {
     &-tab {
 
@@ -54,9 +51,7 @@
 #{$pg_h2} {@include font(lg);}
 #{$pg_h3} {@include font(s);}
 
-/*****************************************************************
-  Header
-*****************************************************************/
+//--* Header
 #{$pgHeader} {
     @include dflex;
     @include pos-offset(fixed, $top:0, $left:0, $z-index:100);
@@ -345,9 +340,7 @@ html.util_show {
     }
 }
 
-/*****************************************************************
-  Nav
-*****************************************************************/
+//--* Nav
 #{$pgNav} {
     @include pos-offset(fixed, $top:6.1rem, $left:0, $bottom:0, $z-index:10);
     width:20rem;
@@ -406,9 +399,8 @@ html.util_show {
         }
     }
 }
-/*****************************************************************
-  Content
-*****************************************************************/
+
+//--* Content
 #{$pgWrap} {
     padding-top:15.5rem;
     @extend %transition3s;
@@ -705,9 +697,7 @@ html.util_show {
     }
 }
 
-/*****************************************************************
-    Tab
-*****************************************************************/
+//--* Tab
 #{$pgBoard} {
     &_tab:not([data-util="component"] #{$pgBoard}_tab) {
         display:none;
@@ -777,9 +767,7 @@ html.util_show {
     .search_title {display:none;}
 }
 
-/*****************************************************************
-  Status Chart
-*****************************************************************/
+//--* Status Chart
 #{$pgStatus} {
     #{pgCount}, .pg_project_ing {
         display:inline-flex;
@@ -1014,9 +1002,7 @@ html.util_show {
         }
     }
 }
-/*****************************************************************
-  Table
-*****************************************************************/
+//--* Table
 #{$pgBoard} {
     margin:3rem 2rem 0; border-top:.2rem solid $color-light-gray1;
     &.catch{cursor:grab;}
@@ -1357,9 +1343,8 @@ html.util_show {
     -webkit-backdrop-filter: blur(1rem); -moz-backdrop-filter: blur(1rem); -ms-backdrop-filter: blur(1rem);
     
 }
-/*****************************************************************
-  Layout
-*****************************************************************/
+
+//--* Layout
 #{$pgLayout} {
     padding-top:3rem;
     div {
@@ -1431,9 +1416,7 @@ html.util_show {
     }
 }
 
-/*****************************************************************
-  Device Frame
-*****************************************************************/
+//--* Device Frame
 #{$pgDivice} {
     @include pos-offset(fixed, $top:7rem, $right:100%, $z-index:11);
     width:37rem;
@@ -1517,9 +1500,7 @@ html.util_show {
     #{$pgDivice} {right:1rem;}
 }
 
-/*****************************************************************
-  Component
-*****************************************************************/
+//--* Component
 .pg {
     &-contentWrap {padding:2rem;}
 }
@@ -1648,9 +1629,7 @@ html.util_show {
     &.divice {display:block; visibility:visible; background:$color-gray5; border:none; height:1px;}
 }
 
-/*****************************************************************
-  Dark Mode
-*****************************************************************/
+//----* Dark Mode
 #{$darMode} {
     background-color:$color-darkMode3; color:$color-white;
     body {background-color:$color-darkMode3; color:$color-white;}

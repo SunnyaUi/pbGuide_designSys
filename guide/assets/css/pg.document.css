@@ -244,7 +244,6 @@ hr.divider + [class*=field], hr.divider + [class*=Wrap], hr.divider + * {
   width: 100% !important;
 }
 
-/* WEB FONT */
 @font-face {
   font-family: "iconFont";
   font-style: normal;
@@ -372,10 +371,6 @@ hr.divider + [class*=field], hr.divider + [class*=Wrap], hr.divider + * {
   font-display: swap;
   src: local("Pretendard Thin"), url("../../../assets/fonts/webfonts/Pretendard-Thin.subset.woff2") format("woff2"), url("../../../assets/fonts/webfonts/Pretendard-Thin.subset.woff") format("woff");
 }
-/****************************************/
-/*	PART: work sheet PAGE STYLE
-/****************************************/
-/* flag */
 :root {
   --space-4xs: .4rem;
   --space-3xs: .8rem;

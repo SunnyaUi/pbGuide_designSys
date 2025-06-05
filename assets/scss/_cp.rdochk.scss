@@ -30,6 +30,26 @@ $fieldLabel:'#{$field}-label';
 
         & + .field-chkrdo {margin-left:2rem;}
 
+        // 사이즈
+        &.sm {
+            .chk {
+                &:checked + #{$fieldIcon} {
+                    &::before {
+                        width:.3rem; height:.8rem;
+                    }
+                }
+                & ~ #{$fieldIcon} {width:2rem; height:2rem;}
+            }
+            .rdo {
+                &:checked + #{$fieldIcon} {
+                    &::before {
+                        width:.6rem; height:.6rem;
+                    }
+                }
+                & ~ #{$fieldIcon} {width:1.6rem; height:1.6rem;}
+            }
+        }
+
         // 체크
         .chk {
             &:checked {

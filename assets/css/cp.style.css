@@ -1596,6 +1596,22 @@ p.bul {
 .field-chkrdo + .field-chkrdo {
   margin-left: 2rem;
 }
+.field-chkrdo.sm .chk:checked + .field-icon::before {
+  width: 0.3rem;
+  height: 0.8rem;
+}
+.field-chkrdo.sm .chk ~ .field-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.field-chkrdo.sm .rdo:checked + .field-icon::before {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.field-chkrdo.sm .rdo ~ .field-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
 .field-chkrdo .chk:checked + .field-icon {
   background-color: #347EFF;
   border-color: #347EFF;
@@ -2209,6 +2225,7 @@ p.bul {
 ._input ._secureTxt {
   position: relative;
   display: block;
+  width: 100%;
   height: 4rem;
 }
 ._input ._secureTxt > input[type=password] {
@@ -2218,6 +2235,9 @@ p.bul {
 }
 ._input ._secureTxt > input[type=password]::placeholder {
   color: transparent;
+}
+._input ._secureTxt._input {
+  display: flex;
 }
 ._input ._secureTxt ._password {
   padding: 0 !important;
@@ -2230,11 +2250,14 @@ p.bul {
   transform: translate(0, -50%);
   display: block;
   width: 1rem;
-  height: 1rem;
-  background: #ECEFF4;
+  height: 0;
+  background: #212529;
 }
 ._input ._secureTxt > i + i {
   margin-left: 0.3rem;
+}
+._input ._secureTxt > i._line, ._input ._secureTxt > i._is-active, ._input ._secureTxt > i._pwTxt {
+  height: 1rem;
 }
 ._input ._secureTxt > i._line {
   box-shadow: 0 0 0 0.1rem #C0C6CC inset;

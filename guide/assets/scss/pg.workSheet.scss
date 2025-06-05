@@ -709,8 +709,10 @@ html.util_show {
     Tab
 *****************************************************************/
 #{$pgBoard} {
+    &_tab:not([data-util="component"] #{$pgBoard}_tab) {
+        display:none;
+    }
     &_tab {
-        
         @include pos-offset(fixed, $top:9.9rem, $left:0, $right:0, $z-index:9);
         @include overflow(both, hidden);
         padding:1rem 2rem; background-color:$color-light-blue1;
@@ -870,8 +872,8 @@ html.util_show {
 
 .panel {
     &_head{
-        @include pos-offset(fixed, $top:10.9rem, $left:0, $right:0, $z-index:10);
-        height:4rem; padding:0 52rem 0 2rem;
+        @include pos-offset(fixed, $top:9.9rem, $left:0, $right:0, $z-index:10);
+        height:5rem; padding:1rem 52rem 0 2rem;
         background-color:$color-light-blue1; text-align:right;
         box-shadow:0 .3rem .5rem -.1rem rgba(0,0,0,.3);
         @extend %transition3s;
@@ -1523,18 +1525,19 @@ html.util_show {
 }
 .component {
     &-lst {
-        @include dflex;
+        @include dflex($j-content:space-around);
         flex-wrap:wrap;
 
         & > li {
             margin-bottom:4rem;
+            &:last-child {margin-right:auto;}
             // #{$tbl} {@include line(border, .1rem solid $color-gray3, top);}
         }
     }
 
     &-wrap {
         min-width:375px;
-        & ~ & {margin-left:2rem;}
+        // & ~ & {margin-left:2rem;}
         & > iframe {width:100%; height:64rem; border:.2rem $color-gray2 solid;}
     }
 

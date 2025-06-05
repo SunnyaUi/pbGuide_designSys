@@ -42,7 +42,9 @@ var makeBoard = function () {
       if (obj.directory !== undefined && obj.directory !== '') {
         urlLink = obj.directory;
       } else {
-        liHtml += '<li id="' + obj.id + '" class="component-wrap">';
+        var IdHref = obj.id.replace(/[^\w\-]/g, '');
+
+        liHtml += '<li id="' + IdHref + '" class="component-wrap">';
         liHtml += '    <div class="split col2">';
         liHtml += '        <h2 class="cp-tit dep02">' + obj.name + '</h2>';
         liHtml += '        <div class="value r btnWrap">';
@@ -187,8 +189,10 @@ var guide = {
         var targetSelector = $this.find('a').attr('href');
         if ($(targetSelector).length) {
           var top = $(targetSelector).offset().top;
-          $('html, body').animate({ scrollTop: top - 170 }, 500); // 상단 여백 조정
+          var offset = ($(window).width() < 414) ? 120 : 170; // 👈 조건 분기
+          $('html, body').animate({ scrollTop: top - offset }, 500);
         }
+
       });
 
 
@@ -217,6 +221,9 @@ var guide = {
       $tabLiOn = $('.pg_board_tab .swiper-slide');
       $(window).scrollTop(0);
       $tabLiOn.removeClass('active').eq(0).addClass('active');
+      if (typeof tabSwiper !== 'undefined') {
+        tabSwiper.slideTo(0);
+      }
     });
 
     $btnLightMode.off('click').on('click', function () {

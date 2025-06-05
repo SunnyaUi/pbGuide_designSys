@@ -998,11 +998,22 @@ var guide = {
     $(window).scroll();
   },
   btnSet: function () {
-    var $window = $(window), $btmBtnSet = $('.btm_btn_set'), $btnTop = $('.btn_guide_top'), $btnLightMode = $('.btn_light_mode');
+    var $window = $(window),
+      $btmBtnSet = $('.btm_btn_set'),
+      $btnTop = $('.btn_guide_top'),
+      $btnLightMode = $('.btn_light_mode');
+
     ($(window).scrollTop() > 100) ? $btmBtnSet.addClass('active') : $btmBtnSet.removeClass('active');
-    $btnTop.on('click', function () {
+
+    $btnTop.off('click').on('click', function () {
+      $tabLiOn = $('.pg_board_tab .swiper-slide');
       $(window).scrollTop(0);
+      $tabLiOn.removeClass('active').eq(0).addClass('active');
+      if (typeof tabSwiper !== 'undefined') {
+        tabSwiper.slideTo(0);
+      }
     });
+
     $btnLightMode.off('click').on('click', function () {
       guide.toggle_light_mode();
     });

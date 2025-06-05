@@ -1,5 +1,8 @@
 // tablet
 @media screen and (max-width: 768px) {
+    [data-util="document"] {
+        #pgWrap, .pg-contentWrap {padding-top:0 !important;}
+    }
 
     .btn_util{display:block !important;}
     #{$pgHeader} {
@@ -139,8 +142,19 @@
         }
     }
 
+    .pg-contentWrap {
+        padding:2rem .5rem;
+    }
+    .component-lst {
+        .component-wrap {
+            min-width:320px;
+            &:last-child {margin-right:initial;}
+            // &:nth-child(2n+1) {margin-left:0;}
+        }
+    }
+
     #{$pgWrap} {
-        padding-top:2.5rem;
+        padding-top:0rem;
         #{$pgTit} {
             top:0; left:50%; margin-left:-25%; padding:1rem 1.5rem; z-index:101; @include el-size(60%, 5rem);
             
@@ -158,7 +172,7 @@
         #{$pgBoard} {
             &_tab {
                 top:5rem;
-                ul {&.swiper-wrapper {display:none};}
+                // ul {&.swiper-wrapper {display:none};}
             }
         }
     }
@@ -239,7 +253,7 @@
 
     #{$pgBoard} {
         top:9.5rem; overflow:visible; border-top:0;
-        
+        margin:3rem 0rem 0;
         ul {
             li {
                 & + & {margin-left:.5rem;}
@@ -252,6 +266,10 @@
 
         table {
             white-space:normal;table-layout:fixed;
+            // colgroup {
+            //     col:first-child {width:30px !important}
+            //     col:last-child {width:auto !important}
+            // }
 
             thead {
                 th {
@@ -265,7 +283,7 @@
                     padding:1rem;
 
                     &.id, &.name, &.complete, &.etc {display:table-cell}
-                    &:nth-child(2), &:nth-child(8) {width:40% !important; max-width:40% !important;}
+                    // &:nth-child(2), &:nth-child(8) {width:40% !important; max-width:40% !important;}
                 }
                 .hr th{padding:1.5rem 0}
                 .hr th, tr.no_data td{display:table-cell; text-align:center;}
@@ -363,9 +381,30 @@
 }
 
 // mobile
+
 @media screen and (max-width: 414px) {
     ::-webkit-scrollbar{display:none;}
     body{-ms-overflow-style:none;}
+    [data-util="component"] {
+        
+    #{$pgContent} {
+        padding-top:5rem;
+        }
+    }
+    [data-util="document"] {
+        .wg-fxWrap ~ .wg-fxWrap {margin-top:1rem;}
+        .wg-rowWrap {
+            flex-wrap:wrap;
+            & > .wg-fx {
+                min-width:100%;
+                & ~ .wg-fx {margin-top:1rem;}
+            }
+            &> .wg-colWrap {min-width:100%;}
+        }
+        .wg-colWrap {width:100%; }
+        .wg-splitWrap.col2 > li {width:100%;}
+        table * {word-break: break-all;}
+    }
     
     #{$pgWrap} {
         #{$pgTit} {width:80%; margin-left:0; left:0;}        
@@ -380,7 +419,11 @@
             }
         }
     }
-    #{$pgContent} {padding: 3rem 0rem;}
+    #{$pgContent} {
+        padding:0rem 0rem 3rem;
+        table .remark {width:65px; padding-right:16px;}
+
+    }
     #{$pgBoard} {
         table {
             thead {

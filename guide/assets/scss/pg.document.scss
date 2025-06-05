@@ -134,3 +134,42 @@
         .col-full {float:none; clear:both;}
     }
 }
+[data-util="document"] {
+    #pgWrap {padding-top:7rem}
+    //table
+    .tblWrap {
+        margin:1.5rem 0 .5rem;
+        table {
+            width:100%;
+            th, td {
+                padding:1rem;
+                border-top:1px #ddd solid;
+            }
+
+            th {
+                background:#f0feff;
+            }
+            tbody {
+                &:not(&:first-of-type) {
+                    th {&[rowspan] {border-top:1px #ddd solid;}}
+                }
+                th {
+                    border-right:1px #ddd solid;
+                    background:#f5f5f5;
+                    &[rowspan] {
+                        &:not(&:first-of-type) {
+                            border-top:1px #ddd solid;
+                        }
+                    }
+                    
+                }
+            }
+            
+            tr {
+                &:first-child {
+                    & > th, & > td {border-top:0;}
+                }
+            }
+        }
+    }
+}

@@ -1,15 +1,11 @@
 @charset "UTF-8";
-/**************************/
-/*** Primitive Variables ***/
-/**************************/
-/* Color */
-/* typography */
-/* box */
-/**************************/
-/*** Semantic Variables ***/
-/**************************/
-/* Color */
-/* Typography */
+/*!
+ * Publishing UI Components
+ * © 2025 BLUEWEBD™. All rights reserved.
+ * Licensed under the MIT License.
+ * Attribution to BLUEWEBD™ is required for all copies and derivative works.
+ * https://opensource.org/licenses/MIT
+ */
 .pbg-titWrap > h1 {
   font-family: 'Pretendard', 'sans-serif';
   font-weight: 600;
@@ -42,7 +38,6 @@ body, th, td, input, select, textarea, button, input[type=checkbox]:checked {
   font-weight: 400;
 }
 
-/* Radius */
 /** FONT **/
 /* clamp 기반 font-size
 // 최소 크기 $min, 기본 크기 $preferred, 최대 크기 $max 사이에서 뷰포트에 따라 자동으로 크기가 반응형으로 조정
@@ -54,10 +49,6 @@ body, th, td, input, select, textarea, button, input[type=checkbox]:checked {
 .txt-small {@include font-clamp(0.9rem, 1.2rem, 1.6rem);}
 .txt-default {@include font-clamp(최소값, 선호값, 최대값);} // 최소값은 $min, 최대값은 $max를 벗어날수 없음
  */
-/* */
-/****************************************/
-/*	PART: RESET CSS
-/****************************************/
 * {
   box-sizing: border-box;
 }
@@ -234,9 +225,6 @@ hr.divider + [class*=field], hr.divider + [class*=Wrap], hr.divider + * {
   margin-right: 2.4rem !important;
 }
 
-/****************************************/
-/*	PART: BASIC CSS
-/****************************************/
 .hide {
   position: absolute !important;
   overflow: hidden !important;

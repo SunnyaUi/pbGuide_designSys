@@ -1,15 +1,11 @@
 @charset "UTF-8";
-/**************************/
-/*** Primitive Variables ***/
-/**************************/
-/* Color */
-/* typography */
-/* box */
-/**************************/
-/*** Semantic Variables ***/
-/**************************/
-/* Color */
-/* Typography */
+/*!
+ * Publishing UI Components
+ * © 2025 BLUEWEBD™. All rights reserved.
+ * Licensed under the MIT License.
+ * Attribution to BLUEWEBD™ is required for all copies and derivative works.
+ * https://opensource.org/licenses/MIT
+ */
 body, th, td, input, select, textarea, button, input[type=checkbox]:checked {
   font-family: 'Pretendard', 'sans-serif';
   font-size: 1.4rem;
@@ -18,7 +14,6 @@ body, th, td, input, select, textarea, button, input[type=checkbox]:checked {
   font-weight: 400;
 }
 
-/* Radius */
 #pgHeader .pg_util .btn_responsive {
   border-radius: 0.5rem;
 }
@@ -38,10 +33,6 @@ body, th, td, input, select, textarea, button, input[type=checkbox]:checked {
   transition: 0.3s all ease-in-out;
 }
 
-/* */
-/****************************************/
-/*	PART: RESET CSS
-/****************************************/
 * {
   box-sizing: border-box;
 }
@@ -218,9 +209,6 @@ hr.divider + [class*=field], hr.divider + [class*=Wrap], hr.divider + * {
   margin-right: 2.4rem !important;
 }
 
-/****************************************/
-/*	PART: BASIC CSS
-/****************************************/
 .hide {
   position: absolute !important;
   overflow: hidden !important;
@@ -1464,6 +1452,9 @@ html.m .pg_content {
 /*****************************************************************
     Tab
 *****************************************************************/
+.pg_board_tab:not([data-util=component] .pg_board_tab) {
+  display: none;
+}
 .pg_board_tab {
   position: fixed;
   top: 9.9rem;
@@ -1666,12 +1657,12 @@ html.m .search_title {
 
 .panel_head {
   position: fixed;
-  top: 10.9rem;
+  top: 9.9rem;
   left: 0;
   right: 0;
   z-index: 10;
-  height: 4rem;
-  padding: 0 52rem 0 2rem;
+  height: 5rem;
+  padding: 1rem 52rem 0 2rem;
   background-color: #eceef0;
   text-align: right;
   box-shadow: 0 0.3rem 0.5rem -0.1rem rgba(0, 0, 0, 0.3);
@@ -2658,16 +2649,17 @@ html.m .frame_device {
 .component-lst {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .component-lst > li {
   margin-bottom: 4rem;
 }
+.component-lst > li:last-child {
+  margin-right: auto;
+}
 .component-wrap {
   min-width: 375px;
-}
-.component-wrap ~ .component-wrap {
-  margin-left: 2rem;
 }
 .component-wrap > iframe {
   width: 100%;
@@ -3007,6 +2999,9 @@ html[light-mode=dark] .frame_device .device .btn_size_set button {
 }
 
 @media screen and (max-width: 768px) {
+  [data-util=document] #pgWrap, [data-util=document] .pg-contentWrap {
+    padding-top: 0 !important;
+  }
   .btn_util {
     display: block !important;
   }
@@ -3183,8 +3178,17 @@ html[light-mode=dark] .frame_device .device .btn_size_set button {
     transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
   }
+  .pg-contentWrap {
+    padding: 2rem 0.5rem;
+  }
+  .component-lst .component-wrap {
+    min-width: 320px;
+  }
+  .component-lst .component-wrap:last-child {
+    margin-right: initial;
+  }
   #pgWrap {
-    padding-top: 2.5rem;
+    padding-top: 0rem;
   }
   #pgWrap .pg_titles {
     top: 0;
@@ -3214,9 +3218,6 @@ html[light-mode=dark] .frame_device .device .btn_size_set button {
   }
   #pgContainer .pg_board_tab {
     top: 5rem;
-  }
-  #pgContainer .pg_board_tab ul.swiper-wrapper {
-    display: none;
   }
   html.m #pgContainer {
     margin: 0;
@@ -3307,6 +3308,7 @@ html[light-mode=dark] .frame_device .device .btn_size_set button {
     top: 9.5rem;
     overflow: visible;
     border-top: 0;
+    margin: 3rem 0rem 0;
   }
   .pg_board ul li + .pg_board ul li {
     margin-left: 0.5rem;
@@ -3334,10 +3336,6 @@ html[light-mode=dark] .frame_device .device .btn_size_set button {
   }
   .pg_board table tbody td.id, .pg_board table tbody td.name, .pg_board table tbody td.complete, .pg_board table tbody td.etc {
     display: table-cell;
-  }
-  .pg_board table tbody td:nth-child(2), .pg_board table tbody td:nth-child(8) {
-    width: 40% !important;
-    max-width: 40% !important;
   }
   .pg_board table tbody .hr th {
     padding: 1.5rem 0;
@@ -3489,6 +3487,33 @@ html[light-mode=dark] .frame_device .device .btn_size_set button {
   body {
     -ms-overflow-style: none;
   }
+  [data-util=component] .pg_content {
+    padding-top: 5rem;
+  }
+  [data-util=document] .wg-fxWrap ~ .wg-fxWrap {
+    margin-top: 1rem;
+  }
+  [data-util=document] .wg-rowWrap {
+    flex-wrap: wrap;
+  }
+  [data-util=document] .wg-rowWrap > .wg-fx {
+    min-width: 100%;
+  }
+  [data-util=document] .wg-rowWrap > .wg-fx ~ .wg-fx {
+    margin-top: 1rem;
+  }
+  [data-util=document] .wg-rowWrap > .wg-colWrap {
+    min-width: 100%;
+  }
+  [data-util=document] .wg-colWrap {
+    width: 100%;
+  }
+  [data-util=document] .wg-splitWrap.col2 > li {
+    width: 100%;
+  }
+  [data-util=document] table * {
+    word-break: break-all;
+  }
   #pgWrap .pg_titles {
     width: 80%;
     margin-left: 0;
@@ -3509,7 +3534,11 @@ html[light-mode=dark] .frame_device .device .btn_size_set button {
     font-weight: 500;
   }
   .pg_content {
-    padding: 3rem 0rem;
+    padding: 0rem 0rem 3rem;
+  }
+  .pg_content table .remark {
+    width: 65px;
+    padding-right: 16px;
   }
   .pg_board table thead th:nth-child(1) {
     display: table-cell;

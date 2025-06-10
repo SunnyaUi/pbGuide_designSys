@@ -9,7 +9,7 @@ $headerHtml += '    <ul>';
 $headerHtml += '      <li><a href="./workSheet.html" target="_blank">Worksheet</a></li>';
 $headerHtml += '      <li><a href="./component.html" target="_blank">Component</a></li>';
 $headerHtml += '      <li><a href="./document.html" target="_blank">Document</a></li>';
-$headerHtml += '  <li><a href="https://github.com/SunnyaUi/pbGuide_designSys.git" target="_blank">[github]</a></li>';
+// $headerHtml += '  <li><a href="https://github.com/SunnyaUi/pbGuide_designSys.git" target="_blank">[github]</a></li>';
 $headerHtml += '    </ul>';
 $headerHtml += '  </div>';
 $headerHtml += '</div>';

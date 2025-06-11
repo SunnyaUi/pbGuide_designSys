@@ -8,6 +8,23 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="copyright" content="©2025 BLUEWEBD™. All rights reserved.">
 <meta name="author" content="BLUEWEBD™">
+<link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./assets/img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="../../assets/img/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
 <link rel="stylesheet" type="text/css" href="./assets/css/pg.workSheet.css">
 <script src="./assets/js/lib/lib.jquery-3.6.3.min.js"></script>
@@ -22,8 +39,23 @@
   .auth {font-size:2.4rem; font-weight:600;}
   .auth > a {text-decoration:none; color:#2d2d6d}
   .auth > a > span {display: inline-block; position:relative; padding:0 .5rem;}
-  .auth > a > span:before {content: ""; display: block; position: absolute; left: 0; bottom: 1rem; z-index: -1; background: linear-gradient(to top, #99d1ff 40%, transparent 40%); width: 100%; height: 2rem;}
-  .auth > a > span:after {content: ""; display: block; position: absolute; left: 0; bottom: 0; z-index: -1; background: linear-gradient(to top, #99f0ff 40%, transparent 40%); width: 100%; height: 2.5rem;}
+  .auth > a > span{position:relative;display:inline-block;overflow:hidden}
+  .auth > a > span{position:relative;display:inline-block;overflow:hidden}
+  .auth > a > span:before,.auth > a > span:after{content:"";display:block;position:absolute;left:0;z-index:-1;width:100%;transform:scaleX(0);animation-duration:2s;animation-timing-function:ease-in-out;animation-iteration-count:infinite;transition:background .3s ease}
+  .auth > a > span:before{bottom:1rem;height:2rem;transform-origin:left;background:linear-gradient(to top,#99d1ff 40%,transparent 40%);animation-name:fillLeftToRight}
+  .auth > a > span:after{bottom:0;height:2.5rem;transform-origin:right;background:linear-gradient(to top,#99f0ff 40%,transparent 40%);animation-name:fillRightToLeft;}
+  .auth > a:hover > span:before{background:linear-gradient(to top,#a5f8a1 40%,transparent 40%)}
+  .auth > a:hover > span:after{background:linear-gradient(to top,#eaff71 40%,transparent 40%)}
+  @keyframes fillLeftToRight {
+  0%{transform:scaleX(0)}
+  50%{transform:scaleX(1)}
+  100%{transform:scaleX(0)}
+  }
+  @keyframes fillRightToLeft {
+  0%{transform:scaleX(0)}
+  50%{transform:scaleX(1)}
+  100%{transform:scaleX(0)}
+  }
   .license {color:#666; margin-top:1rem !important;}
 </style>
 </head>

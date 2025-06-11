@@ -284,38 +284,38 @@ $fontWeight:(
 
 //- * Typography */
 
-%heading-2xl-bold {@include dndCP($heading, (2xl, bold));}
-%heading-2xl-medium {@include dndCP($heading, (2xl, medium));}
-%heading-2xl-regular {@include dndCP($heading, (2xl, regular));}
-%heading-xl-bold {@include dndCP($heading, (xl, bold));}
-%heading-xl-medium {@include dndCP($heading, (xl, medium));}
-%heading-xl-regular {@include dndCP($heading, (xl, regular));}
-%heading-lg-bold {@include dndCP($heading, (lg, bold));}
-%heading-lg-medium {@include dndCP($heading, (lg, medium));}
-%heading-lg-regular {@include dndCP($heading, (lg, regular));}
-%heading-md-bold {@include dndCP($heading, (md, bold));}
-%heading-md-medium {@include dndCP($heading, (md, medium));}
-%heading-md-regular {@include dndCP($heading, (md, regular));}
-%heading-sm-bold {@include dndCP($heading, (sm, bold));}
-%heading-sm-medium {@include dndCP($heading, (sm, medium));}
-%heading-sm-regular {@include dndCP($heading, (sm, regular));}
+%heading-2xl-bold {@include sunnyaCP($heading, (2xl, bold));}
+%heading-2xl-medium {@include sunnyaCP($heading, (2xl, medium));}
+%heading-2xl-regular {@include sunnyaCP($heading, (2xl, regular));}
+%heading-xl-bold {@include sunnyaCP($heading, (xl, bold));}
+%heading-xl-medium {@include sunnyaCP($heading, (xl, medium));}
+%heading-xl-regular {@include sunnyaCP($heading, (xl, regular));}
+%heading-lg-bold {@include sunnyaCP($heading, (lg, bold));}
+%heading-lg-medium {@include sunnyaCP($heading, (lg, medium));}
+%heading-lg-regular {@include sunnyaCP($heading, (lg, regular));}
+%heading-md-bold {@include sunnyaCP($heading, (md, bold));}
+%heading-md-medium {@include sunnyaCP($heading, (md, medium));}
+%heading-md-regular {@include sunnyaCP($heading, (md, regular));}
+%heading-sm-bold {@include sunnyaCP($heading, (sm, bold));}
+%heading-sm-medium {@include sunnyaCP($heading, (sm, medium));}
+%heading-sm-regular {@include sunnyaCP($heading, (sm, regular));}
 
-%body-lg-bold {@include dndCP($body, (lg, bold));}
-%body-lg-medium {@include dndCP($body, (lg, medium));}
-%body-lg-regular {@include dndCP($body, (lg, regular));}
-%body-md-bold {@include dndCP($body, (md, bold));}
-%body-md-medium {@include dndCP($body, (md, medium));}
-%body-md-regular {@include dndCP($body, (md, regular));}
-%body-sm-bold {@include dndCP($body, (sm, bold));}
-%body-sm-medium {@include dndCP($body, (sm, medium));}
-%body-sm-regular {@include dndCP($body, (sm, regular));}
-%body-xs-bold {@include dndCP($body, (xs, bold));}
-%body-xs-medium {@include dndCP($body, (xs, medium));}
-%body-xs-regular {@include dndCP($body, (xs, regular));}
+%body-lg-bold {@include sunnyaCP($body, (lg, bold));}
+%body-lg-medium {@include sunnyaCP($body, (lg, medium));}
+%body-lg-regular {@include sunnyaCP($body, (lg, regular));}
+%body-md-bold {@include sunnyaCP($body, (md, bold));}
+%body-md-medium {@include sunnyaCP($body, (md, medium));}
+%body-md-regular {@include sunnyaCP($body, (md, regular));}
+%body-sm-bold {@include sunnyaCP($body, (sm, bold));}
+%body-sm-medium {@include sunnyaCP($body, (sm, medium));}
+%body-sm-regular {@include sunnyaCP($body, (sm, regular));}
+%body-xs-bold {@include sunnyaCP($body, (xs, bold));}
+%body-xs-medium {@include sunnyaCP($body, (xs, medium));}
+%body-xs-regular {@include sunnyaCP($body, (xs, regular));}
 
-%weight-regular {@include dndCP($fontWeight, regular);}
-%weight-medium {@include dndCP($fontWeight, medium);}
-%weight-bold {@include dndCP($fontWeight, bold);}
+%weight-regular {@include sunnyaCP($fontWeight, regular);}
+%weight-medium {@include sunnyaCP($fontWeight, medium);}
+%weight-bold {@include sunnyaCP($fontWeight, bold);}
 
 //- * Radius */
 $radius: (
@@ -332,15 +332,15 @@ $radius: (
     round:(border-radius:$radius-round),
     full:(border-radius:$radius-full),
 );
-%radius-0 {@include dndCP($radius, 0);}
-%radius-4 {@include dndCP($radius, 5);}
-%radius-5 {@include dndCP($radius, 5);}
-%radius-8 {@include dndCP($radius, 8);}
-%radius-12 {@include dndCP($radius, 12);}
-%radius-16 {@include dndCP($radius, 16);}
-%radius-24 {@include dndCP($radius, 24);}
-%radius-round {@include dndCP($radius, round);}
-%radius-full {@include dndCP($radius, full);}
+%radius-0 {@include sunnyaCP($radius, 0);}
+%radius-4 {@include sunnyaCP($radius, 5);}
+%radius-5 {@include sunnyaCP($radius, 5);}
+%radius-8 {@include sunnyaCP($radius, 8);}
+%radius-12 {@include sunnyaCP($radius, 12);}
+%radius-16 {@include sunnyaCP($radius, 16);}
+%radius-24 {@include sunnyaCP($radius, 24);}
+%radius-round {@include sunnyaCP($radius, round);}
+%radius-full {@include sunnyaCP($radius, full);}
 
 %disabled {opacity:.6;}
 
@@ -374,12 +374,12 @@ $status: (
         ),
     ),
 );
-%disabled-primary {@include dndCP($status, (disabled, primary));}
-%disabled-secondary {@include dndCP($status, (disabled, secondary));}
-%disabled-tertiary {@include dndCP($status, (disabled, tertiary));}
-%disabled-form {@include dndCP($status, (disabled, form));}
+%disabled-primary {@include sunnyaCP($status, (disabled, primary));}
+%disabled-secondary {@include sunnyaCP($status, (disabled, secondary));}
+%disabled-tertiary {@include sunnyaCP($status, (disabled, tertiary));}
+%disabled-form {@include sunnyaCP($status, (disabled, form));}
 
-%readonly-form {@include dndCP($status, (readonly, form));}
+%readonly-form {@include sunnyaCP($status, (readonly, form));}
 
 $shadow: (
     sm:(box-shadow:0 .1rem .2rem rgba(0, 0, 0, 0.05)),
@@ -387,9 +387,9 @@ $shadow: (
     lg:(box-shadow:0 1rem 1.5rem rgba(0, 0, 0, 0.15)),
 );
 
-%shadow-sm {@include dndCP($shadow, sm);}
-%shadow-md {@include dndCP($shadow, md);}
-%shadow-lg {@include dndCP($shadow, lg);}
+%shadow-sm {@include sunnyaCP($shadow, sm);}
+%shadow-md {@include sunnyaCP($shadow, md);}
+%shadow-lg {@include sunnyaCP($shadow, lg);}
 
 $dimmed:(
     opacity-05:(background:$color-transparent-05),
@@ -397,6 +397,6 @@ $dimmed:(
     opacity-60:(background:$color-transparent-60),
 );
 
-%sdimmed-05 {@include dndCP($dimmed, opacity-05);}
-%sdimmed-50 {@include dndCP($dimmed, opacity-50);}
-%sdimmed-60 {@include dndCP($dimmed, opacity-60);}
+%sdimmed-05 {@include sunnyaCP($dimmed, opacity-05);}
+%sdimmed-50 {@include sunnyaCP($dimmed, opacity-50);}
+%sdimmed-60 {@include sunnyaCP($dimmed, opacity-60);}

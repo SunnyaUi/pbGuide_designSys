@@ -224,55 +224,55 @@ $ico: (
 );
 
 // 사이즈
-%ico-size-16 {@include dndCP($ico, (size, 16));}
-%ico-size-20 {@include dndCP($ico, (size, 20));}
-%ico-size-24 {@include dndCP($ico, (size, 24));}
-%ico-size-32 {@include dndCP($ico, (size, 32));}
+%ico-size-16 {@include sunnyaCP($ico, (size, 16));}
+%ico-size-20 {@include sunnyaCP($ico, (size, 20));}
+%ico-size-24 {@include sunnyaCP($ico, (size, 24));}
+%ico-size-32 {@include sunnyaCP($ico, (size, 32));}
 
 // 화살표 16
-%ico-arrow-up-16 {@include dndCP($ico, (16, arrow-dn)); transform: rotate(180deg);}
-%ico-arrow-dn-16 {@include dndCP($ico, (16, arrow-dn));}
-%ico-arrow-left-16 {@include dndCP($ico, (16, arrow-dn)); transform: rotate(-90deg);}
-%ico-arrow-right-16 {@include dndCP($ico, (16, arrow-dn)); transform: rotate(90deg);}
+%ico-arrow-up-16 {@include sunnyaCP($ico, (16, arrow-dn)); transform: rotate(180deg);}
+%ico-arrow-dn-16 {@include sunnyaCP($ico, (16, arrow-dn));}
+%ico-arrow-left-16 {@include sunnyaCP($ico, (16, arrow-dn)); transform: rotate(-90deg);}
+%ico-arrow-right-16 {@include sunnyaCP($ico, (16, arrow-dn)); transform: rotate(90deg);}
 // 화살표 20
-%ico-arrow-up-20 {@include dndCP($ico, (20, arrow-dn)); transform: rotate(180deg);}
-%ico-arrow-dn-20 {@include dndCP($ico, (20, arrow-dn));}
-%ico-arrow-left-20 {@include dndCP($ico, (20, arrow-dn)); transform: rotate(-90deg);}
-%ico-arrow-right-20 {@include dndCP($ico, (20, arrow-dn)); transform: rotate(90deg);}
+%ico-arrow-up-20 {@include sunnyaCP($ico, (20, arrow-dn)); transform: rotate(180deg);}
+%ico-arrow-dn-20 {@include sunnyaCP($ico, (20, arrow-dn));}
+%ico-arrow-left-20 {@include sunnyaCP($ico, (20, arrow-dn)); transform: rotate(-90deg);}
+%ico-arrow-right-20 {@include sunnyaCP($ico, (20, arrow-dn)); transform: rotate(90deg);}
 // 화살표 24
-%ico-arrow-up-24 {@include dndCP($ico, (24, arrow-dn)); transform: rotate(180deg);}
-%ico-arrow-dn-24 {@include dndCP($ico, (24, arrow-dn));}
-%ico-arrow-left-24 {@include dndCP($ico, (24, arrow-dn)); transform: rotate(-90deg);}
-%ico-arrow-right-24 {@include dndCP($ico, (24, arrow-dn)); transform: rotate(90deg);}
+%ico-arrow-up-24 {@include sunnyaCP($ico, (24, arrow-dn)); transform: rotate(180deg);}
+%ico-arrow-dn-24 {@include sunnyaCP($ico, (24, arrow-dn));}
+%ico-arrow-left-24 {@include sunnyaCP($ico, (24, arrow-dn)); transform: rotate(-90deg);}
+%ico-arrow-right-24 {@include sunnyaCP($ico, (24, arrow-dn)); transform: rotate(90deg);}
 // 화살표 32
-%ico-arrow-up-32 {@include dndCP($ico, (32, arrow-dn)); transform: rotate(180deg);}
-%ico-arrow-dn-32 {@include dndCP($ico, (32, arrow-dn));}
-%ico-arrow-left-32 {@include dndCP($ico, (32, arrow-dn)); transform: rotate(-90deg);}
-%ico-arrow-right-32 {@include dndCP($ico, (32, arrow-dn)); transform: rotate(90deg);}
+%ico-arrow-up-32 {@include sunnyaCP($ico, (32, arrow-dn)); transform: rotate(180deg);}
+%ico-arrow-dn-32 {@include sunnyaCP($ico, (32, arrow-dn));}
+%ico-arrow-left-32 {@include sunnyaCP($ico, (32, arrow-dn)); transform: rotate(-90deg);}
+%ico-arrow-right-32 {@include sunnyaCP($ico, (32, arrow-dn)); transform: rotate(90deg);}
 
 // 툴팁 16
-%ico-tooltip_default-16 {@include dndCP($ico, (16, tooltip_default));}
-%ico-tooltip_active-16 {@include dndCP($ico, (16, tooltip_active));}
-%ico-tooltip_close-16 {@include dndCP($ico, (16, tooltip_close));}
+%ico-tooltip_default-16 {@include sunnyaCP($ico, (16, tooltip_default));}
+%ico-tooltip_active-16 {@include sunnyaCP($ico, (16, tooltip_active));}
+%ico-tooltip_close-16 {@include sunnyaCP($ico, (16, tooltip_close));}
 
 // 유틸 ICO
-%ico-add-file-20 {@include dndCP($ico, (20, add-file));}
+%ico-add-file-20 {@include sunnyaCP($ico, (20, add-file));}
 %ico-circle-x-24,
-%input-clear {@include dndCP($ico, (24, circle-x));}
-%ico-close-24 {@include dndCP($ico, (24, close));}
-%ico-calendar-24 {@include dndCP($ico, (24, calendar));}
-%ico-trash-24 {@include dndCP($ico, (24, trash));}
-%ico-add-field-24 {@include dndCP($ico, (24, add-field));}
-%ico-del-field-24 {@include dndCP($ico, (24, del-field));}
-%ico-clip-24 {@include dndCP($ico, (24, clip));}
-%ico-his-prev {@include dndCP($ico, (24, arrow-dn)); transform: rotate(90deg);}
-%ico-check {@include dndCP($ico, item-check);}
-%ico-star {@include dndCP($ico, (bul, star));}
+%input-clear {@include sunnyaCP($ico, (24, circle-x));}
+%ico-close-24 {@include sunnyaCP($ico, (24, close));}
+%ico-calendar-24 {@include sunnyaCP($ico, (24, calendar));}
+%ico-trash-24 {@include sunnyaCP($ico, (24, trash));}
+%ico-add-field-24 {@include sunnyaCP($ico, (24, add-field));}
+%ico-del-field-24 {@include sunnyaCP($ico, (24, del-field));}
+%ico-clip-24 {@include sunnyaCP($ico, (24, clip));}
+%ico-his-prev {@include sunnyaCP($ico, (24, arrow-dn)); transform: rotate(90deg);}
+%ico-check {@include sunnyaCP($ico, item-check);}
+%ico-star {@include sunnyaCP($ico, (bul, star));}
 
 // 헤더버튼
-%ico-his-back {@include dndCP($ico, (32, arrow-dn)); transform: rotate(90deg);}
-%ico-bell-32 {@include dndCP($ico, (32, bell));}
-%ico-menu-32 {@include dndCP($ico, (32, menu));}
+%ico-his-back {@include sunnyaCP($ico, (32, arrow-dn)); transform: rotate(90deg);}
+%ico-bell-32 {@include sunnyaCP($ico, (32, bell));}
+%ico-menu-32 {@include sunnyaCP($ico, (32, menu));}
 
 $icos: '.icons';
 $icon: '.ico';
@@ -360,9 +360,9 @@ $tooltip: (
         close:(background-image:svgIcoImage(16_close, 38C959F),),
     ),
 );
-%tooltip-ico-default {@include dndCP($tooltip, (ico, default));}
-%tooltip-ico-active {@include dndCP($tooltip, (ico, active));}
-%tooltip-ico-close {@include dndCP($tooltip, (ico, close));}
+%tooltip-ico-default {@include sunnyaCP($tooltip, (ico, default));}
+%tooltip-ico-active {@include sunnyaCP($tooltip, (ico, active));}
+%tooltip-ico-close {@include sunnyaCP($tooltip, (ico, close));}
 
 #{$icon} {
     display: inline-block;
